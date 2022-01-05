@@ -15,7 +15,7 @@ class Navigation extends React.Component {
               <Button>Projects</Button>
               <Button>Resume</Button>
               <Button>Blog</Button>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} />
+              <Typography sx={{ flexGrow: 1 }} />
               <Button>Contact</Button>
             </Toolbar>
           </AppBar>
