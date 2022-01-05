@@ -3,13 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Counter from './components/counter';
-import Header from './components/header'
-
-
+import Navigation from './components/nav.jsx';
+import Footer from './components/footer.jsx';
+import Home from './components/home.jsx';
+import Projects from './components/projects.jsx';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
+    <Router>
+    <Navigation />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/projects" element={<Projects />} />
+    </Routes>
+    <Footer />
+  </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

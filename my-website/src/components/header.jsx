@@ -19,7 +19,6 @@ class Header extends React.Component {
         }
         return (
         <div>
-            <Navigation></Navigation>
             <Grid container spacing={10}>
                 <Grid item md={6}>
                     <Container style={{
@@ -47,9 +46,7 @@ class Header extends React.Component {
                         <img style={imgStyle} width={300} src={logo} alt="Logo" />;
                     </Container>
                 </Grid>
-            </Grid>
-            <Footer />
-            
+            </Grid>            
         </div>);
     }
 }
