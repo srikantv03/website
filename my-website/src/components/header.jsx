@@ -17,15 +17,17 @@ class Header extends React.Component {
             border: '5px solid #1976d2',
             borderRadius: '50%',
         }
+        const leftContainerStyle = {}
         return (
         <div>
-            <Grid container spacing={10}>
-                <Grid item md={6}>
-                    <Container style={{
-                        paddingLeft: '200px',
-                        paddingRight: '0px',
-                        paddingTop: '100px'
-                    }}>
+            <Grid 
+            height='80vh'
+            alignItems="center"
+            justifyContent="center"
+            container
+            spacing={0}>
+                <Grid item md={7}>
+                    <Container style={{padding: 15}} maxWidth='sm'>
                         <h1 style={{fontSize: '58px'}}>My name is Srikant!</h1>
                         <h1 style={{fontSize: '32px'}}>
                             I'm a {" "}
@@ -39,11 +41,9 @@ class Header extends React.Component {
                         <Button style={learnMoreStyle} variant="contained">Learn More</Button>
                     </Container>
                 </Grid>
-                <Grid item md={6}>
-                    <Container style={{
-                        padding: '150px'
-                    }}>
-                        <img style={imgStyle} width={300} src={logo} alt="Logo" />;
+                <Grid item md={5}>
+                    <Container style={{paddingTop: 45}} maxWidth='md'>
+                        <img onDragStart={this.preventDragHandler} style={imgStyle} width={300} src={logo} alt="Logo" />;
                     </Container>
                 </Grid>
             </Grid>            
