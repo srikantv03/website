@@ -1,1 +1,1 @@
-web: npm start --prefix my-website
+web: npm start
