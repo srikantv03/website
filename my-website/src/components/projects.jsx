@@ -26,17 +26,24 @@ class Projects extends React.Component {
                 icons: [
                     'https://youtube.com/treecant'
                 ]
+            },
+            {
+                name: 'TaskIt',
+                desc: 'Android task manager application that connects with the Canvas LMS API to streamline tasks across platforms.',
+                icons: [
+                    'https://github.com/treecant'
+                ]
             }
         ]
         const projectItems = projects.map((project) =>
             <Grid item md={6}>
-                <Project name={project.name} desc={project.desc}/>
+                <Project name={project.name} desc={project.desc} icons={project.icons}/>
             </Grid>
         );
         return (
         <div>
             <center>
-                <h2>PROJECTS</h2>
+                <h1>PROJECTS</h1>
             </center>
             <Container maxWidth='md'>
             <Grid

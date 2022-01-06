@@ -18,7 +18,7 @@ class Footer extends React.Component {
                 spacing={0}
                 alignItems="center"
                 justifyContent="center"
-                style={{minHeight: '200px'}}>
+                style={{minHeight: '150px'}}>
                     <SocialIcon style={siStyle} url="https://youtube.com" />
                     <SocialIcon style={siStyle} url="https://github.com" />
                     <SocialIcon style={siStyle} url="https://linkedin.com" />
