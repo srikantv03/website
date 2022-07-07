@@ -22,3 +22,7 @@ code {
 .font-item {
   font-family: 'Raleway', sans-serif !important;
 }
+
+.markdown-section {
+  padding: 40px;
+}

@@ -28,8 +28,7 @@ class Navigation extends React.Component {
               <div style={{marginLeft: '10vw'}}></div>
               <NavLink style={{textDecoration: 'none'}} to='/'><Button className="font-item" style={getStyle("home")} onClick={() => this.setState({page: "home"})}>Home</Button></NavLink>
               <NavLink style={{textDecoration: 'none'}} to='/projects'><Button className="font-item" style={getStyle("projects")} onClick={() => this.setState({page: "projects"})}>Projects</Button></NavLink>
-              
-              <Button className="font-item" style={getStyle("resume")}>Resume</Button>
+              <NavLink style={{textDecoration: 'none'}} to='/resume'><Button className="font-item" style={getStyle("resume")} onClick={() => this.setState({page: "resume"})}>Resume</Button></NavLink>
               <Button className="font-item" style={getStyle("blog")}>Blog</Button>
               <Typography sx={{ flexGrow: 1 }} />
               <Button className="font-item" >Contact</Button>
